@@ -3,8 +3,7 @@
 #include<queue>
 #include<limits.h>
 
-//E&E Implementation from
-//https://cp-algorithms.com/graph/edmonds_karp.html#implementation
+//Juez en SPOJ lo acepta solo si se elige como compilador 'C++14 (gcc 8.3)'
 
 const int INF = INT_MAX;
 
@@ -12,6 +11,9 @@ using namespace std;
 
 int N, M; //2 ≤ n ≤ 300
 vector<bool> Prim;
+
+//E&E Implementation from
+//https://cp-algorithms.com/graph/edmonds_karp.html#implementation
 
 vector<vector<int>> capacity; //The matrix stores the capacity for every pair of vertices. The matrix will actually store the residual capacity of the network.
 vector<vector<int>> adj; //adjacency list of the undirected graph, since we have also to use
